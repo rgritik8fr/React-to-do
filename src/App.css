@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background:#D7DAE0; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+ 
+}
+ul li{
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  width: 400px;
+  height: 600px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
+}
+.heading{
+  padding:1rem 0;
+  background: #8e44ad;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px 
+}
+.list .input{
+  margin: 2rem 1rem;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.list input{
+  width: 80%;
+ 
+  border:1px solid #D7DAE0 ;
+}
+.btn button{
+  width:20%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 1rem;
+  background: #8e44ad;
+  color:#fff;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li{
+  font-size: 1.5rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-transform: uppercase;
+}
+.icon{
+  margin: 0 1rem;
 }
